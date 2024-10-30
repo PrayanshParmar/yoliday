@@ -48,7 +48,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 // import { Home, Briefcase, Search, User } from "lucide-react";
 import { cn } from "@/lib/utils";
-import portfolioIcon from "@/assets/mobile-navbar/Portfolio.svg";
+import portfolioIcon from "@/assets/mobile-navbar/portfolio.svg";
 
 // const navItems = [
 //   { icon: Home, label: "Home", path: "/" },
