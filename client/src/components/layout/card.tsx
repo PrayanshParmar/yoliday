@@ -10,7 +10,7 @@ interface CustomeCardProps {
 const CustomeCard = ({ title, children, contentClass }: CustomeCardProps) => {
   return (
     <Card className="w-full h-full bg-white rounded-none sm:rounded-[15px]">
-      <CardHeader className="flex-row items-center justify-between ">
+      <CardHeader className="flex-row items-center justify-between pb-0 ">
         <CardTitle className="text-lg font-medium sm:text-[22px] sm:leading-[25px] sm:font-semibold ">
           {title}
         </CardTitle>
