@@ -1,14 +1,18 @@
-// import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import DesktopLayout from "./desktop-layout";
 import MobileLayout from "./mobile-layout";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 
 export default function MainLayout() {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  // useEffect(() => {
-  //   navigate("/portfolio");
-  // }, []);
+  useEffect(() => {
+    // Check if the current path is root ('/')
+    if (location.pathname === "/") {
+      navigate("/portfolio");
+    }
+  }, [location.pathname, navigate]);
 
   return (
     <div className="w-full h-full">
