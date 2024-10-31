@@ -76,10 +76,12 @@ export default function Component() {
         {/* Render content for each tab */}
         {isLoading ? (
           <div className="w-full h-full py-4 mt-2 max-sm:px-2 ">
-            <ProjectCardSkeleton />
-            <ProjectCardSkeleton />
-            <ProjectCardSkeleton />
-            <ProjectCardSkeleton />
+            <div className="flex flex-col w-full h-full gap-5">
+              <ProjectCardSkeleton />
+              <ProjectCardSkeleton />
+              <ProjectCardSkeleton />
+              <ProjectCardSkeleton />
+            </div>
           </div>
         ) : (
           tabItems.map((item) => (
